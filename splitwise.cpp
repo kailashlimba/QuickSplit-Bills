@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
+signed main()
 {
     int i, n, m, u, v, w, mini, x, maxi, y, up, TotalTransactions=0, t1=1, t2=0, t3=0;
     cout<<"\t \t \t ################# WELCOME TO QUICK-SPLIT ####################"<<endl;
@@ -10,9 +10,8 @@ int main()
     
     cout<<"Enter the number of people and the number of transaction"<<endl;
     cin >> n >> m;
-    int debt[n+100];
 
-    memset(debt,0,sizeof(debt));
+    vector<int> debt(n+100,0);
 
     cout<<"ThankYou!"<<endl;
     cout<<"In the next "<<m<<" lines " <<"please enter the index of the person who paid the amount followed by the index of the person who owe it"<<endl;
